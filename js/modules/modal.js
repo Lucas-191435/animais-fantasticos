@@ -23,7 +23,7 @@ export default class Modal {
 
   cliqueForaModal(event) {
     if (event.target === this.containerModal) {
-      this.toggleModal(event);
+      this.toggleModal();
     }
   }
 
