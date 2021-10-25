@@ -6,7 +6,6 @@ export default class Tooltip{
 
     //bind do objeto da classe, adicionando valores nas propriedades;
     this.onMouseLeave = this.onMouseLeave.bind(this);
-    console.log(this.onMouseLeave)
     this.onMouseMove = this.onMouseMove.bind(this);
     this.onMouseOver = this.onMouseOver.bind(this);
 
@@ -38,7 +37,6 @@ export default class Tooltip{
   }
 
   onMouseOver({currentTarget}) {
-    console.log(currentTarget)
     //cria a tooltips e coloca em uma propriedade;
     this.criarTooltipBox(currentTarget)
     currentTarget.addEventListener('mousemove', this.onMouseMove);
