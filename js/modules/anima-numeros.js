@@ -9,7 +9,6 @@ export default class AnimaNumeros {
     
   }
 
-
   static incrementarNumero(numero){
     const total = +numero.innerText;
     const incremento = Math.floor(total / 100);
