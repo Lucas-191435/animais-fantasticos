@@ -5,6 +5,8 @@ export default class AnimaNumeros {
     this.observeClass = observeClass;
     this.observerTarget = document.querySelector(observerTarget);
     this.handleMutation = this.handleMutation.bind(this);    
+
+
   }
 
   static incrementarNumero(numero){
