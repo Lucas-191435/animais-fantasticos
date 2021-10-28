@@ -1,8 +1,6 @@
 export default class Funcionamento {
   constructor(data, classActive){
-    console.log('vaiEntrar')
     this.funcionamento = document.querySelector(data);
-   
     if(classActive === undefined){
       this.activeClass = 'aberto';
     }else{
@@ -14,7 +12,7 @@ export default class Funcionamento {
     this.diasSemana = this.funcionamento.dataset.semana.split(',').map(Number);
     this.horarioSemana = this.funcionamento.dataset.horario.split(',').map(Number);
 
-    console.log(this.diasSemana);
+   
   }
 
   dadosAgora(){
@@ -33,7 +31,6 @@ export default class Funcionamento {
   ativaAberto(){
     if(this.estaAberto()){
       this.funcionamento.classList.add(this.activeClass);
-      console.log(this.activeClass)
     }
   }
 
@@ -43,7 +40,7 @@ export default class Funcionamento {
       this.dadosAgora()
       this.ativaAberto();
     }
-    console.log('entrou')
+
     return this;
   }
 }
